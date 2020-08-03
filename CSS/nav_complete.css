@@ -1,0 +1,176 @@
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.6s;
+    z-index: 4;
+}
+
+/* Base styles that apply to all menus */
+.menu-section {
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid hsl(0, 0%, );
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	padding: .6em 1em;
+}
+
+.menu li a:hover {
+	color: #f6f5ef;
+}
+
+/* Styles for Single Level Menu */
+
+@media screen and (min-width: 30em) {
+ 
+    .single-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .single-nav li {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+    
+}
+
+/* Styles for social media menu */
+
+/* Find src URL and add in correct social media icon. */
+.right-menu li a:before {
+}
+
+/* Flexbox stuff */
+
+.right-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* Styles for mixed menu (drop-down + social) */
+.nav-mixed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(246,245,239); /* Black fallback color */
+  background-color: rgba(246,245,239,1); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    text-decoration: none;
+    color: #231f20;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #231f20;
+    opacity: 50%;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.hamburger{
+    position: absolute;
+    z-index: 2;
+    
+}
+
+.fill{
+    opacity: 0%;
+    transition: 0.3s ease;
+}
+
+/* Fill changes on hover */
+
+.fill:hover{
+    opacity: inherit;
+    transition: 0.3s ease;
+}
+
+.search-btn {
+    position: absolute;
+    right:1.5em;
+    top:1.5em;
+}
+.search-content{
+    position: relative;
+    top: 20%;
+
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 4em;
+    text-align: center;
+    border: none;
+    float: left;
+    width: 100%;
+    background: none;
+    color: #231f20; 
+}
+
+.search-button{
+    float: center;
+    padding: 15px;
+    
+}

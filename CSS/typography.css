@@ -1,0 +1,107 @@
+h1{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+h2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #231f20;
+}
+
+h3{
+    font-family: 'DM Sans', sans-serif;
+}
+
+p{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+small{
+    font-family: sans-serif;
+    text-transform: uppercase; 
+    padding: 1em;
+}
+
+.overlay-h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 4em;
+    font-weight: 200;
+    line-height: 0.98em;
+}
+
+.overlay-h3{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero-h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 4em;
+    font-weight: 200;
+    line-height: 0.95em;
+    margin: 0px;
+}
+
+.hero-h3{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.menu li a{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: #231f20;
+}
+
+.search-bar{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.caption-title{
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    font-size: 0.8em;
+    color: #231f20;
+    font-weight: 100;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.caption-text{
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    font-size: 0.5em;
+    font-weight: 50;
+    color: #231f20;
+    padding: 10px;
+}
+
+.main-head{
+    margin-left: 45px;
+}
+
+.footer-primary{
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    color: #231f20;
+    font-weight: 100;
+
+}
+
+.footer-secondary{
+    
+}
+
+.footer-links
+{
+    
+}
